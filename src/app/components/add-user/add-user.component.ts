@@ -20,8 +20,8 @@ export class AddUserComponent implements OnInit {
 
   ngOnInit() {
     this.registerForm = this.formBuilder.group({
-      userName: ['', Validators.pattern("[a-zA-Z ]*")],
-      userSurname: ['', Validators.pattern("[a-zA-Z ]*")],
+      userName: ['', Validators.pattern("[a-zA-ZąćęłńóśźżĄĆĘŁŃÓŚŹŻ]*")],
+      userSurname: ['', Validators.pattern("[a-zA-ZąćęłńóśźżĄĆĘŁŃÓŚŹŻ]*")],
       userAge: ['', [Validators.pattern("^[0-9]*$")]]
     });
   }
